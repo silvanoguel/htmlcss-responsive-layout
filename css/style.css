@@ -187,3 +187,45 @@ header .menu {
     /* debug */
     color: red;
 }
+
+/* Benefits section*/
+
+.benefits {
+    background-color: #9792E4;
+}
+
+.benefits-card {
+    margin-top: 1rem;
+    background-color: white;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media screen and (min-width:768px) {
+    /* Layout */
+    .benefits-card {
+        width: 50%;
+
+    }
+
+    .benefits .container-90 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* For desktop */
+@media screen and (min-width:992px) {
+    /* Layout */
+    .benefits-card {
+        width: 33%;
+    }
+
+    .benefits .container-90 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
