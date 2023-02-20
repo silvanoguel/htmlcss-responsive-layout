@@ -13,6 +13,10 @@ body {
 
 /* Utilities */
 
+.img {
+    max-width: 100%;
+}
+
 .flex {
     display: flex;
 }
@@ -20,6 +24,15 @@ body {
 .container-90 {
     width: 90%;
     margin: 0 auto;
+}
+
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 .space-between {
@@ -46,6 +59,29 @@ header .menu {
     display: none;
 }
 
+/* Media Queries */
+
+/* For desktop */
+@media screen and (min-width:992px) {
+    header .menu {
+        display: block;
+    }
+    header .menu ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+    }
+
+    header .menu a {
+       text-decoration: none;
+       color: white;
+    }
+
+    header .hamburger {
+        display: none;
+    }
+}
+
 /* MAIN */
 
 .card {
@@ -61,7 +97,9 @@ header .menu {
 
 /* Media Queries */
 
+/* For tablets */
 @media screen and (min-width:768px) {
+    /* Layout */
     .col-66 {
         width: calc(100%);
     }
@@ -77,7 +115,34 @@ header .menu {
     .row1 {
         flex-direction: row;
         flex-wrap: wrap;
-    
+    }
+}
+
+/* Planning section */
+
+.planning {
+    /* debug */
+    background-color: blueviolet;
+    margin-top: 2rem;
+}
+
+
+/* Media Queries */
+
+/* For desktop */
+@media screen and (min-width:992px) {
+   .container-90  {
+    display: flex; 
     }
 
+    .strategic {
+        width: 50%;
+    }
+
+    .app-dev {
+        width: 50%
+    }
 }
+
+
+
