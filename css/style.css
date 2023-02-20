@@ -1,0 +1,47 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Utilities */
+
+.flex {
+    display: flex;
+}
+
+.container-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #0084FD;
+    color: white;
+    align-items: center;
+}
+
+header .menu {
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:768px) {
+    
+
+}
