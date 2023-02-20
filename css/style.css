@@ -11,7 +11,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 /* Utilities */
 
 .flex {
@@ -27,6 +26,14 @@ body {
     justify-content: space-between;
 }
 
+.margin-top2rem {
+    margin-top: 2rem;
+}
+
+.margin-top1rem {
+    margin-top: 1rem;
+}
+
 /* HEADER */
 header {
     height: 100px;
@@ -39,9 +46,38 @@ header .menu {
     display: none;
 }
 
+/* MAIN */
+
+.card {
+    /* debug */
+    height: 500px;
+    background-color: lightblue;
+    border-radius: 30px;
+}
+
+.row1 {
+    flex-direction: column;
+}
+
 /* Media Queries */
 
 @media screen and (min-width:768px) {
+    .col-66 {
+        width: calc(100%);
+    }
+    .col-33 {
+        width: calc(100%);
+    }
+    .col-66 {
+        width: 66%;
+    }
+    .col-33 {
+        width: 33%;
+    }
+    .row1 {
+        flex-direction: row;
+        flex-wrap: wrap;
     
+    }
 
 }
