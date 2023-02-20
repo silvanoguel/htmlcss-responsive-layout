@@ -1,4 +1,4 @@
-/* RESET */
+e/* RESET */
 * {
     padding: 0;
     margin: 0;
@@ -144,5 +144,46 @@ header .menu {
     }
 }
 
+/* Testimonals Section */
+.testimonial-card:not(.intro) {
+    width: 100%;
+    /* debug */
+    background-color: aquamarine;
+}
+.testimonial-card .intro {
+    width: 100%;
+}
 
+.testimonials .container-90 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.testimonial-card img {
+    /* debug */
+    width: 300px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonials {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media screen and (min-width:768px) {
+    /* Layout */
+   
+    .testimonial-card:not(.intro) {
+        display: flex;
+    }
+}
+
+.testimonial-name {
+    /* debug */
+    color: red;
+}
