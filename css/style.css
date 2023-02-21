@@ -47,6 +47,11 @@ body {
     margin-top: 1rem;
 }
 
+.pt2rem {
+    padding-top: 2rem;
+}
+
+
 /* HEADER */
 header {
     height: 100px;
@@ -166,7 +171,6 @@ header .menu {
     }
 }
 
-
 /* For desktop */
 @media screen and (min-width:992px) {
     .card-particular  {
@@ -183,10 +187,53 @@ header .menu {
 /* Planning section */
 .planning {
     /* debug */
-    background-color: blueviolet;
+    background-color: #9792E4;
     margin-top: 2rem;
+    padding-bottom: 3rem;
 }
 
+.strategic {
+    color: white;
+}
+.strategic img {
+    width: 300px;
+}
+
+h3 {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.app-dev {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.app-dev img {
+    width: 270px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#arrow-down {
+    background-color: #9792E4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: #9792E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+}
 
 /* Media Queries */
 
@@ -201,15 +248,16 @@ header .menu {
     }
 
     .app-dev {
-        width: 50%
+        width: 50%;
+        margin-top: 7rem;
+        margin-bottom: 0.5rem;
     }
 }
 
 /* Testimonals Section */
 .testimonial-card:not(.intro) {
     width: 100%;
-    /* debug */
-    background-color: aquamarine;
+    background-color: #9792E4;;
 }
 .testimonial-card .intro {
     width: 100%;
