@@ -1,4 +1,4 @@
-e/* RESET */
+/* RESET */
 * {
     padding: 0;
     margin: 0;
@@ -86,13 +86,60 @@ header .menu {
 
 .card {
     /* debug */
-    height: 500px;
-    background-color: lightblue;
+    background-color: #B5DDFF;
     border-radius: 30px;
+    padding: 1.5rem;
+    margin: 0.5rem;
 }
 
 .row1 {
     flex-direction: column;
+}
+
+.card-image img {
+    width: 300px;
+    display: block;
+}
+
+.card-text {
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.card-text-title {
+    color: #0084FD;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0084FD;
+    color: white;
+    padding: 0.5rem 3rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.card-logo {
+    color: #0084FD;
+    font-size: 100px;
+    margin: 0 auto;
+    display: table;
+    padding-bottom: 1rem;
+}
+
+.card-particular .card-text-title  {
+    text-align: left;
+}
+
+.card-particular .card-text  {
+    text-align: left;
+}
+.card-particular .card-text .btn {
+    text-align: left;
 }
 
 /* Media Queries */
@@ -105,6 +152,7 @@ header .menu {
     }
     .col-33 {
         width: calc(100%);
+        display: flex;
     }
     .col-66 {
         width: 66%;
@@ -118,8 +166,21 @@ header .menu {
     }
 }
 
-/* Planning section */
 
+/* For desktop */
+@media screen and (min-width:992px) {
+    .card-particular  {
+     display: flex; 
+     }
+     /* Layout */
+     .col-66 {
+        width: 66%;
+        display: flex;
+    }
+ }
+
+
+/* Planning section */
 .planning {
     /* debug */
     background-color: blueviolet;
@@ -162,8 +223,9 @@ header .menu {
 
 .testimonial-card img {
     /* debug */
-    width: 300px;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
