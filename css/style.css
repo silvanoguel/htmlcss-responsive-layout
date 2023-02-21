@@ -64,17 +64,29 @@ header .menu {
     display: none;
 }
 
+.menu .btn-header {
+    background-color: White;
+    color: black;
+    padding: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
 /* Media Queries */
 
 /* For desktop */
 @media screen and (min-width:992px) {
     header .menu {
         display: block;
+        
     }
     header .menu ul {
         display: flex;
+        align-items: center;
         list-style-type: none;
         gap: 1rem;
+       
     }
 
     header .menu a {
@@ -85,6 +97,15 @@ header .menu {
     header .hamburger {
         display: none;
     }
+
+    .menu .btn-header {
+        background-color: White;
+        color: black;
+        padding: 0.5rem;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+
 }
 
 /* MAIN */
